@@ -1,0 +1,9 @@
+#playTimer {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	z-index: 9999;
+	font-weight: bold;
+	font-size: 150%;
+	color: #ff642b;
+}

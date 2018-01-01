@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Playtime",
+  "description": "Tracks time spent browsing time-wasting websites like Reddit or Facebook.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+   {
+     "matches": ["http://www.reddit.com/*", "https://www.reddit.com/*", "http://reddit.com/*", "https://reddit.com/*", "http://www.facebook.com/*", "https://www.facebook.com/*", "http://facebook.com/*", "https://facebook.com/*", "http://news.google.com/*", "https://news.google.com/*"],
+     "css": ["timer.css"],
+     "js": ["jquery.min.js", "timer.js"]
+   }
+  ]
+}
